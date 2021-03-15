@@ -1,0 +1,122 @@
+html, body {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.timer {
+    position: relative;
+    max-width: 450px;
+    height: fit-content;
+    background-color: #ffffff0f;
+    margin: auto;
+
+    align-items: center;
+}
+
+.timer svg {
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    z-index: 1;
+    height: 80%;
+}
+
+.timer img {  
+    position: relative;
+    width: 50%; 
+    padding: 25%;
+    user-select: none;
+}
+
+.timerButtons {
+    top: 50%;
+    position: relative;
+}
+
+.timerButtons button {
+    width: 28%;
+    font-size: 1em;
+    position: absolute;
+    left: 36%;
+    margin-top: 5%;
+
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-weight: bold;
+    border: 1.5mm solid rgb(46, 193, 115);
+    border-radius: 8px;
+}
+
+.timerButtons button:hover {
+    background-color: #ffffff0f;
+    transition: 200ms;
+    transition-timing-function: linear;
+    transform: scale(1.1);
+}
+
+.timeLeft {
+    color: white;
+    width: fit-content;
+    margin: auto;
+    padding: 5%;
+}
+
+@media only screen and (max-width: 450px) {
+    .timerButtons button {
+        display: none;
+    }
+}
+
+.overview {
+    align-items: center;
+    margin: auto;
+    width: fit-content;
+}
+
+.shop {
+    width: 95%;
+    margin: auto;
+}
+
+.shopCards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.plantCard {
+    width: fit-content;
+    margin: auto;
+    padding: 1% 0%;
+    display: grid;
+    filter: brightness(0.9);
+}
+
+.plantCard:hover {
+    position: relative;
+    filter: brightness(1);
+    transform: scale(1.1);
+    transition: 0.6s;
+}
+
+.plantCard img {
+  height: 20vh;
+}
+
+.plantCard h3 {
+    font-size: 1em;
+    color: #ffd68f;
+    width: fit-content;
+    margin: 3% auto;
+}
+
+.gardenPlant img {
+    height: 60px;
+}
