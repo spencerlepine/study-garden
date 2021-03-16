@@ -1,0 +1,20 @@
+.garden {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    background-color: #6F532A;
+    background-color: #836B32;
+    background-image: url(../../images/dirt.svg);
+    background-size: calc(10vw - 4px);
+    overflow: hidden;
+    border: 12px solid #6D5720;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.gardenPlant img {
+    user-select: none;
+    -webkit-user-drag: none;
+    height: 60px;
+    padding: 5px;
+}
+

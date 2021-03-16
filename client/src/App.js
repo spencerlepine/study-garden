@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react"
+import React, { useEffect } from "react"
 import { Switch, Route } from "react-router-dom"
 import { useDispatch } from "react-redux"
 import PlantTimer from "./components/PlantTimer"
 import Shop from "./components/Shop"
-import Garden from "./components/Garden"
+import Garden from "./components/Garden/Garden"
 
 import './App.css';
 

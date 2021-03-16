@@ -5,6 +5,7 @@ import { createPlant } from "../actions/plants"
 import formatTime from "./formatTime.js"
 import { CircleSlider } from "react-circle-slider";
 import samplePlants from "./samplePlants"
+import HomeButton from "./HomeButton"
 
 function PlantTimer() {
     const [count, setCount] = useState(1)
@@ -52,7 +53,7 @@ function PlantTimer() {
 
     return (
         <>
-            <button onClick={() => history.push("/")}>Home</button>
+            {!running && <HomeButton />}
             <div className="timer">
                 {startTime === 0 
                     && 

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import { useSelector } from "react-redux"
-import samplePlants from "./samplePlants"
+import samplePlants from "../samplePlants"
+import "./styles.css"
 
 function getPlantImage(type) {
     for (let i = 0, l = samplePlants.length; i < l; i++) {
@@ -21,8 +22,10 @@ function Garden() {
     return (
         <div className="overview">
             <p>Plants: {plants.length}</p>
-            {plantList}
-            <Link to="/shop">Shop</Link>
+            <div className="garden">
+                {plantList}
+            </div>
+            <Link to="/shop">🪴Study</Link>
         </div>
     )
 }
