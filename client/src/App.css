@@ -91,6 +91,8 @@ html, body {
 }
 
 .shop {
+    display: flex;
+    flex-direction: column;
     width: 95%;
     margin: auto;
 }
@@ -121,14 +123,35 @@ html, body {
 
 .plantCard h3 {
     font-size: 1em;
-    color: #ffd68f;
+    color: #754d0d;
     width: fit-content;
     margin: 3% auto;
 }
 
 .homeButton {
     position: fixed;
-    top: 0;
+    top: 10px;
     bottom: 0;
     padding: 1% 2%;
+    height: fit-content;
+}
+
+a {
+    background: #907837;
+    color: white;
+    font-size: 1.3em;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px #562b07;
+}
+
+a:hover {
+    filter: brightness(1.1);
+    transition-delay: 100ms;
+}
+
+.shopLink {
+    position: relative;
+    top: 10px;
 }

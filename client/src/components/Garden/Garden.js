@@ -1,31 +1,23 @@
 import { Link } from "react-router-dom"
 import { useSelector } from "react-redux"
-import samplePlants from "../samplePlants"
+import Plant from "./Plant/Plant"
+import getPlantImage from "./plantImage"
 import "./styles.css"
-
-function getPlantImage(type) {
-    for (let i = 0, l = samplePlants.length; i < l; i++) {
-        if (samplePlants[i].type === type) {
-            return samplePlants[i].source
-        }
-    }
-}
 
 function Garden() {
     const plants = useSelector((state) => state.plants)
     
-    const plantList = plants.map((plant, i)=> (
-        <div key={i} className="gardenPlant" onClick={() => {console.log(plant._id)}}>
-            <img src={getPlantImage(plant.type) || "http://www.freeiconspng.com/uploads/error-icon-28.png"} alt="Plant" />
-        </div>
+    const plantList = plants.map((plant, i) => (
+        <Plant i={i} src={getPlantImage(plant.type) || "http://www.freeiconspng.com/uploads/error-icon-28.png"} plant={plant}></Plant>
     ))
+    
     return (
         <div className="overview">
             <p>Plants: {plants.length}</p>
             <div className="garden">
                 {plantList}
             </div>
-            <Link to="/shop">🪴Study</Link>
+            <Link to="/shop" className="shopLink">🪴Study</Link>
         </div>
     )
 }
