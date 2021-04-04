@@ -9,7 +9,9 @@ Improve focus and discipline with this timer app. Study until the timer runs out
   <a href="#status">Status</a> 
 </p>
 
-![App screens](./client/src/images/screenshot.jpg)
+<hr>
+
+<div style="text-align:center"><img src="./client/src/images/screenshot.jpg" /></div>
 
 ## Technologies:
 - [React](https://reactjs.org/)
@@ -48,15 +50,10 @@ $ npm install
 $ npm start
 ```
 ## App Overview:
-**Landing page:** view the personal garden from data stored in the MongoDB.
-**Store:** choose your plant to grow
-**Countdown:** set and run the study timer
-```mermaid
-graph LR
-A[Garden Overview] --> B(Store)
-B --> C[Countdown]
-C --> A
-```
+- **Landing page:** view the personal garden from data stored in the MongoDB.
+- **Store:** choose your plant to grow
+- **Countdown:** set and run the study timer
+
 
 ## Status:
 ''Completed''. This project is the foundation for the concept. Styles can be improved, features could be added.
