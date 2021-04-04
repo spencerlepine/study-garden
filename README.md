@@ -6,7 +6,7 @@ Forest app reacreation with React, MongoDB, Express, and Node.
 
 Setup:
 - In ```/client```, run ```npm install``` and ```npm start```
--   Connect a MongoDB Atlas Cluster in  `/server.env`  
+- Connect a MongoDB Atlas Cluster in  `/server.env`  
 -- Create a '.env' file in the root directory
 -- Include the line:   
 	```CONNECTION_URL=mongodb+srv://:@cluster0.5qf6a.mongodb.net/?retryWrites=true&w=majority```
