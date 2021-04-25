@@ -1,6 +1,6 @@
 # Study Garden
 
-Improve focus and discipline with this timer app. Study until the timer runs out and add plants to your personal garden. This is a recreation of the popuolar [Forest](https://www.forestapp.cc/) app for the browser.
+Improve focus and discipline with this timer app. Study until the timer runs out and add plants to your personal garden. This is a recreation of the popular [Forest](https://www.forestapp.cc/) app for the browser.
 
 <p align="center">
 	<a href="#technologies">Technologies</a> •
